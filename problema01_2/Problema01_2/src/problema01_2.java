@@ -18,9 +18,9 @@ public class problema01_2 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.print("Ingrese el primer número: ");
+        System.out.print("Ingrese el primer numero: ");
         double num1 = entrada.nextDouble();
-        System.out.print("Ingrese el segundo número: ");
+        System.out.print("Ingrese el segundo numero: ");
         double num2 = entrada.nextDouble();
         System.out.print("Seleccione operación (1: suma, 2: resta, 3: multiplicacion, 4: division, 5: modulo, 6: potencia): ");
         int opcion = entrada.nextInt();
@@ -41,12 +41,12 @@ public class problema01_2 {
                     resultado = num1 - num2;
                     break;
                 case 3:
-                    nombreOperacion = "Multiplicación";
+                    nombreOperacion = "Multiplicacion";
                     resultado = num1 * num2;
                     break;
                 case 4:
                     if (num2 != 0) {
-                        nombreOperacion = "División";
+                        nombreOperacion = "Division";
                         resultado = num1 / num2;
                     } else {
                         System.out.println("Error: No se puede dividir para cero.");
@@ -55,10 +55,10 @@ public class problema01_2 {
                     break;
                 case 5:
                     if (num2 != 0) {
-                        nombreOperacion = "Módulo";
+                        nombreOperacion = "Modulo";
                         resultado = num1 % num2;
                     } else {
-                        System.out.println("Error: No se puede calcular el módulo con cero.");
+                        System.out.println("Error: No se puede calcular el modulo con cero.");
                         operacionValida = false;
                     }
                     break;
@@ -67,21 +67,21 @@ public class problema01_2 {
                     resultado = Math.pow(num1, num2);
                     break;
                 default:
-                    System.out.println("La opción seleccionada no es válida.");
+                    System.out.println("La opcion seleccionada no es valida.");
                     operacionValida = false;
                     break;
             }
 
             if (operacionValida) {
                 System.out.printf("\nOPERACIONES ARITMÉTICAS\n\n"
-                        + "Primer número: %.2f\n"
-                        + "Segundo número: %.2f\n"
-                        + "Operación seleccionada: %s\n\n"
+                        + "Primer numero: %.2f\n"
+                        + "Segundo numero: %.2f\n"
+                        + "Operacion seleccionada: %s\n\n"
                         + "Resultado: %.2f\n", num1, num2, nombreOperacion, resultado);
             }
 
         } else {
-            System.out.println("No es posible realizar la operación:");
+            System.out.println("No es posible realizar la operacion:");
         }
     }
 }
