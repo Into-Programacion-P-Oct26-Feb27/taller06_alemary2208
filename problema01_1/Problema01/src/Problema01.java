@@ -63,7 +63,7 @@ System.out.print("Ingrese el primer número: ");
             }
 
             if (operacionValida) {
-                System.out.printf("\nOPERACIONES ARITMÉTICAS\n\n"
+                System.out.printf("OPERACIONES ARITMÉTICAS\n\n"
                         + "Primer número: %.2f\n"
                         + "Segundo número: %.2f\n"
                         + "Operación seleccionada: %s\n\n"
