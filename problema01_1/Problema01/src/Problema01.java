@@ -16,7 +16,7 @@ public class Problema01 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         
-System.out.print("Ingrese el primer número: ");
+        System.out.print("Ingrese el primer número: ");
         double num1 = entrada.nextDouble();
         System.out.print("Ingrese el segundo número: ");
         double num2 = entrada.nextDouble();
@@ -36,11 +36,11 @@ System.out.print("Ingrese el primer número: ");
                 nombreOperacion = "Resta";
                 resultado = num1 - num2;
             } else if (opcion == 3) {
-                nombreOperacion = "Multiplicación";
+                nombreOperacion = "Multiplicacion";
                 resultado = num1 * num2;
             } else if (opcion == 4) {
                 if (num2 != 0) {
-                    nombreOperacion = "División";
+                    nombreOperacion = "Division";
                     resultado = num1 / num2;
                 } else {
                     System.out.println("Error: No se puede dividir para cero.");
@@ -48,30 +48,30 @@ System.out.print("Ingrese el primer número: ");
                 }
             } else if (opcion == 5) {
                 if (num2 != 0) {
-                    nombreOperacion = "Módulo";
+                    nombreOperacion = "Modulo";
                     resultado = num1 % num2;
                 } else {
-                    System.out.println("Error: No se puede calcular el módulo con cero.");
+                    System.out.println("Error: No se puede calcular el modulo con cero.");
                     operacionValida = false;
                 }
             } else if (opcion == 6) {
                 nombreOperacion = "Potencia";
                 resultado = Math.pow(num1, num2);
             } else {
-                System.out.println("La opción seleccionada no es válida.");
+                System.out.println("La opcion seleccionada no es valida.");
                 operacionValida = false;
             }
 
             if (operacionValida) {
                 System.out.printf("OPERACIONES ARITMÉTICAS\n\n"
-                        + "Primer número: %.2f\n"
-                        + "Segundo número: %.2f\n"
-                        + "Operación seleccionada: %s\n\n"
+                        + "Primer numero: %.2f\n"
+                        + "Segundo numero: %.2f\n"
+                        + "Operacion seleccionada: %s\n\n"
                         + "Resultado: %.2f\n", num1, num2, nombreOperacion, resultado);
             }
 
         } else {
-            System.out.println("No es posible realizar la operación: el primer número debe ser mayor que el segundo.");
+            System.out.println("No es posible realizar la operación");
         }
     }
 }

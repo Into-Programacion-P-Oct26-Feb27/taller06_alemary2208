@@ -29,55 +29,60 @@ public class problema01_2 {
         String nombreOperacion = "";
         double resultado = 0;
 
-        if (num1 > num2)
-    
-            switch(opcion){
-            case 1:
-                System.out.printf("%s", opcion);
-                break;
-            
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break;
-            
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break;
-                
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break;
-                
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break; 
-                
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break;
-            
-            switch(opcion){
-            case 2:
-                System.out.printf("%s", opcion);
-                break;
-                
-                System.out.printf("%s, es el séptimo día "
-                        + "de la semana", cadena);
-                break;
-                
-            default:
-                System.out.println("ninguna de las anteriores");
-                break;
+        if (num1 > num2) {
+
+            switch (opcion) {
+                case 1:
+                    nombreOperacion = "Suma";
+                    resultado = num1 + num2;
+                    break;
+                case 2:
+                    nombreOperacion = "Resta";
+                    resultado = num1 - num2;
+                    break;
+                case 3:
+                    nombreOperacion = "Multiplicación";
+                    resultado = num1 * num2;
+                    break;
+                case 4:
+                    if (num2 != 0) {
+                        nombreOperacion = "División";
+                        resultado = num1 / num2;
+                    } else {
+                        System.out.println("Error: No se puede dividir para cero.");
+                        operacionValida = false;
+                    }
+                    break;
+                case 5:
+                    if (num2 != 0) {
+                        nombreOperacion = "Módulo";
+                        resultado = num1 % num2;
+                    } else {
+                        System.out.println("Error: No se puede calcular el módulo con cero.");
+                        operacionValida = false;
+                    }
+                    break;
+                case 6:
+                    nombreOperacion = "Potencia";
+                    resultado = Math.pow(num1, num2);
+                    break;
+                default:
+                    System.out.println("La opción seleccionada no es válida.");
+                    operacionValida = false;
+                    break;
+            }
+
+            if (operacionValida) {
+                System.out.printf("\nOPERACIONES ARITMÉTICAS\n\n"
+                        + "Primer número: %.2f\n"
+                        + "Segundo número: %.2f\n"
+                        + "Operación seleccionada: %s\n\n"
+                        + "Resultado: %.2f\n", num1, num2, nombreOperacion, resultado);
+            }
+
+        } else {
+            System.out.println("No es posible realizar la operación:");
         }
-        
     }
 }
 
-    }
-    
-}
