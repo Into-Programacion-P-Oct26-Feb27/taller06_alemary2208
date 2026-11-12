@@ -18,6 +18,66 @@ public class problema01_2 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
+        System.out.print("Ingrese el primer número: ");
+        double num1 = entrada.nextDouble();
+        System.out.print("Ingrese el segundo número: ");
+        double num2 = entrada.nextDouble();
+        System.out.print("Seleccione operación (1: suma, 2: resta, 3: multiplicacion, 4: division, 5: modulo, 6: potencia): ");
+        int opcion = entrada.nextInt();
+
+        boolean operacionValida = true;
+        String nombreOperacion = "";
+        double resultado = 0;
+
+        if (num1 > num2)
+    
+            switch(opcion){
+            case 1:
+                System.out.printf("%s", opcion);
+                break;
+            
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break;
+            
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break;
+                
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break;
+                
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break; 
+                
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break;
+            
+            switch(opcion){
+            case 2:
+                System.out.printf("%s", opcion);
+                break;
+                
+                System.out.printf("%s, es el séptimo día "
+                        + "de la semana", cadena);
+                break;
+                
+            default:
+                System.out.println("ninguna de las anteriores");
+                break;
+        }
+        
+    }
+}
+
     }
     
 }
